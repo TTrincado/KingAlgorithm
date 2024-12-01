@@ -24,11 +24,11 @@ Finalmente, dependiendo del número de traidores, se preguntará i veces qué no
 
     "Seleccione el nodo para el traidor i:"
 
-Por simplicidad (También, para cumplir con restricción puesta en las diapositivas de clases), no podrán haber 2 nodos traidores seguidos.
+Por simplicidad, no podrán haber 2 nodos traidores seguidos.
 
 Una vez se hayan ingresado los inputs que cumplan con las condiciones especificadas anteriormente, se generará el archivo docker-compose.yml con las características de cada nodo, los contenedores se levantarán y correrán el archivo main.go que contiene el flujo principal del algoritmo del rey (comando en Dockerfile), donde se irá mostrando en consola el estado y progreso de cada nodo. 
 
-A lo largo del main.go, habrá una cierta cantidad de time.sleeps localizados estratégicamente para poder hacer que los nodos no partan procesos sin que otros nodos hayan terminados, y que los outputs sean más ordenados de ver. 
+A lo largo del main.go, habrá una cierta cantidad de time.sleeps localizados estratégicamente para poder hacer que los nodos no partan procesos sin que otros nodos hayan terminados, y que los outputs sean más ordenados de ver. (Opcionalmente se pueden ocupar wgs)
 
 Importante a tener en cuenta, para reflejar el comportamiento de un traidores, se simulará la inconsistencia de la siguiente manera:
 
